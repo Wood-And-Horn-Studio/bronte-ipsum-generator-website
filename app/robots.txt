@@ -1,3 +1,4 @@
 User-Agent: *
 Allow: /
 
+Sitemap: https://bronte-ipsum.com/sitemap.xml
