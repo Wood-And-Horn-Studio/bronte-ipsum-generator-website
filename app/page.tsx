@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <div className="hidden md:grid md:grid-cols-5 gap-2">
+        <div className="hidden sm:grid sm:grid-cols-5 gap-2">
           <Image
             className="w-full"
             src="/Charlotte_Bronte_by_George_Richmond.jpg"
@@ -67,6 +67,15 @@ export default function Home() {
             loading="eager"
           />
         </div>
+        <Image
+          className="block sm:hidden w-full"
+          src="/The_Brontë_Sisters_by_Patrick_Branwell_Brontë.jpg"
+          alt="The Brontë Sisters by Patrick Branwell Brontë"
+          height={400}
+          width={400}
+          priority
+          loading="eager"
+        />
         <GenerateField />
       </div>
     </main>
