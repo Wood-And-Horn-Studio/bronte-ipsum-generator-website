@@ -3,6 +3,7 @@
 import React from 'react';
 import words from '@/src/lib/words.json'
 import { Clipboard } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 export default function GenerateField() {
 	const minWords = 50;
@@ -26,7 +27,7 @@ export default function GenerateField() {
 	const copyToClipboard = async () => {
 		try {
 			await navigator.clipboard.writeText(text.join('\n\n'));
-			alert('Text copied to clipboard!');
+			toast('Text copied to clipboard');
 		} catch (err) {
 			alert(`Failed to copy text, ${err}`);
 		}

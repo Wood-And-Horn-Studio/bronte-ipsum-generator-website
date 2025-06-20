@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 const empiraFont = localFont({
   src: './fonts/empiralight.woff2',
@@ -17,6 +18,7 @@ export default function RootLayout({
         className={empiraFont.className}
       >
         {children}
+        <Toaster position="bottom-right" />
         <Analytics />
       </body>
     </html>
