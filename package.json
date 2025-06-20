@@ -3,6 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "author": "Wood & Horn Studio",
+  "description": "A website for generating random text based on the works of the Brontë sisters.",
+  "license": "MIT",
+  "keywords": [
+    "bronte",
+    "lorem",
+    "ipsum",
+    "generator",
+    "website",
+    "nextjs",
+    "react"
+  ],
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
