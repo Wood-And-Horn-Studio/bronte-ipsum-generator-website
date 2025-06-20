@@ -36,15 +36,21 @@ export default function GenerateField() {
 		<div className="flex flex-col items-center justify-center w-full h-full p-4">
 			<div className="mt-4">
 				<div className='flex items-center justify-center gap-2 mb-4'>
-					<label className="block text-sm font-medium text-gray-700">Number of Paragraphs:</label>
-					<input
-						type="number"
+					<label className="block text-sm font-medium text-gray-700" htmlFor="paragraph-select">
+						Number of Paragraphs:
+					</label>
+					<select
+						id="paragraph-select"
 						value={paragraphNumber}
-						onChange={(e) => setParagraphNumber(Math.max(1, Math.min(5, Number(e.target.value))))}
-						min="1"
-						max="5"
-						className="w-16"
-					/>
+						onChange={(e) => setParagraphNumber(Number(e.target.value))}
+						className="w-15 px-2"
+					>
+						{[1, 2, 3, 4, 5].map((num) => (
+							<option key={num} value={num}>
+								{num}
+							</option>
+						))}
+					</select>
 					<button
 						aria-label='Copy to clipboard'
 						title='Copy to clipboard'
