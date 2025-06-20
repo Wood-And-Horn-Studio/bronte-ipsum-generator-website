@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <div className="hidden md:grid md:grid-cols-3 gap-2">
+        <div className="hidden md:grid md:grid-cols-5 gap-2">
           <Image
             className="w-full"
             src="/Charlotte_Bronte_by_George_Richmond.jpg"
@@ -43,6 +43,24 @@ export default function Home() {
             className="w-full"
             src="/The_Brontë_Sisters_by_Patrick_Branwell_Brontë.jpg"
             alt="The Brontë Sisters by Patrick Branwell Brontë"
+            height={600}
+            width={400}
+            priority
+            loading="eager"
+          />
+          <Image
+            className="w-full"
+            src="/Emily_Brontë_cropped.jpg"
+            alt="Emily Brontë by Patrick Branwell Brontë"
+            height={600}
+            width={400}
+            priority
+            loading="eager"
+          />
+          <Image
+            className="w-full"
+            src="/AnneBronte.jpg"
+            alt="A sketch of Anne Brontë by Charlotte Brontë"
             height={600}
             width={400}
             priority
