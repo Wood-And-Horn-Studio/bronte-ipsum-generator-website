@@ -13,7 +13,7 @@ main {
 }
 
 h1 {
-  font-size: clamp(2.875rem, 0.25rem + 13.125vw, 16rem);
+  font-size: clamp(2.875rem, 0.025rem + 14.25vw, 17.125rem);
   line-height: 1;
   text-transform: uppercase;
 }
