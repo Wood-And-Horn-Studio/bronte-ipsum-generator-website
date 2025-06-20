@@ -8,9 +8,8 @@ body {
 main {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-between;
-  min-height: 100vh;
-  padding: 2rem;
+  min-height: 100dvh;
+  padding: 0.625rem;
 }
 
 h1 {
