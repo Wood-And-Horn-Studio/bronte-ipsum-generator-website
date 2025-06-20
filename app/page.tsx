@@ -9,7 +9,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="max-w-[1920px] w-full mx-auto">
-      <h1>Brontë Ipsum</h1>
+      <div>
+        <h1>Brontë Ipsum</h1>
+        <p className="text-lg mb-6">A Lorem Ipsum alternative generator that uses text from the works of the Brontë sisters.</p>
+      </div>
       <GenerateField />
     </main>
   );

@@ -34,7 +34,6 @@ export default function GenerateField() {
 
 	return (
 		<div className="flex flex-col items-center justify-center w-full h-full p-4">
-			<p className="text-lg mb-6">A Lorem Ipsum alternative generator that uses text from the works of the Brontë sisters.</p>
 			<div className="mt-4">
 				<div className='flex items-center justify-center gap-2 mb-4'>
 					<label className="block text-sm font-medium text-gray-700">Number of Paragraphs:</label>

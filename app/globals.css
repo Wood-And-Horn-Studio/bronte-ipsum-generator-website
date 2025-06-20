@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
+body {
+  background-color: #f6f4f1;
+  color: #2a2929;
+}
+
 main {
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
   justify-content: space-between;
   min-height: 100vh;
   padding: 2rem;
