@@ -1,4 +1,5 @@
 import GenerateField from "@/src/components/GenerateField";
+import { images } from "@/src/lib/images";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,52 +21,20 @@ export default function Home() {
       </div>
       <div>
         <div className="hidden sm:grid sm:grid-cols-5 gap-2">
-          <Image
-            className="w-full"
-            src="/Charlotte_Bronte_by_George_Richmond.jpg"
-            alt="Charlotte Brontë by George Richmond"
-            height={600}
-            width={400}
-            priority
-            loading="eager"
-          />
-          <Image
-            className="w-full"
-            src="/Charlotte_Brontë_by_Patrick_Branwell_Brontë_restored.jpg"
-            alt="Charlotte Brontë by Patrick Branwell Brontë"
-            height={600}
-            width={400}
-            priority
-            loading="eager"
-
-          />
-          <Image
-            className="w-full"
-            src="/The_Brontë_Sisters_by_Patrick_Branwell_Brontë.jpg"
-            alt="The Brontë Sisters by Patrick Branwell Brontë"
-            height={600}
-            width={400}
-            priority
-            loading="eager"
-          />
-          <Image
-            className="w-full"
-            src="/Emily_Brontë_cropped.jpg"
-            alt="Emily Brontë by Patrick Branwell Brontë"
-            height={600}
-            width={400}
-            priority
-            loading="eager"
-          />
-          <Image
-            className="w-full"
-            src="/AnneBronte.jpg"
-            alt="A sketch of Anne Brontë by Charlotte Brontë"
-            height={600}
-            width={400}
-            priority
-            loading="eager"
-          />
+          {
+            images.map((image, index) => (
+              <Image
+                key={index}
+                className="w-full"
+                src={image.src}
+                alt={image.alt}
+                height={600}
+                width={400}
+                priority
+                loading="eager"
+              />
+            ))
+          }
         </div>
         <Image
           className="block sm:hidden w-full"
