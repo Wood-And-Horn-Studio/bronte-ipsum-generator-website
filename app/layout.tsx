@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 
 const empiraFont = localFont({
@@ -16,6 +17,7 @@ export default function RootLayout({
         className={empiraFont.className}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
