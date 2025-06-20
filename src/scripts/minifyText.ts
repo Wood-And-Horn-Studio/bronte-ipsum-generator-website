@@ -15,7 +15,7 @@ function minifyText() {
 	});
 
 	console.log(`Total words: ${allWords.length}`);
-	writeFileSync('words.json', JSON.stringify(allWords));
+	writeFileSync('./src/lib/words.json', JSON.stringify(allWords));
 	console.log('Words array saved to words.json');
 }
 

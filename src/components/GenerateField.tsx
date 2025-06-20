@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import words from '@/words.json'
+import words from '@/src/lib/words.json'
 import { Clipboard } from 'lucide-react';
 
 export default function GenerateField() {
