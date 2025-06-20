@@ -1,14 +1,16 @@
+import GenerateField from "@/src/components/GenerateField";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Bronte Ipsum | A Lorem Ipsum Generator',
+  title: 'Brontë Ipsum | An Alternative Lorem Ipsum Generator',
   description: 'A Lorem Ipsum alternative generator that uses text from the works of the Brontë sisters, providing a unique and literary alternative to traditional placeholder text.',
 }
 
 export default function Home() {
   return (
-    <div>
-      <h1>Bronte Ipsum</h1>
-    </div>
+    <main className="max-w-[1920px] w-full mx-auto">
+      <h1>Brontë Ipsum</h1>
+      <GenerateField />
+    </main>
   );
 }
