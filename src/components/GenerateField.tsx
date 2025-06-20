@@ -34,7 +34,7 @@ export default function GenerateField() {
 	};
 
 	return (
-		<div className="flex flex-col items-center justify-center w-full h-full p-16">
+		<div className="flex flex-col items-center justify-center w-full h-full py-16">
 			<div className="mt-4">
 				<div className='flex items-center justify-center gap-2 mb-4'>
 					<label className="block text-sm font-medium text-gray-700" htmlFor="paragraph-select">
